@@ -110,11 +110,12 @@ class CoffeeDesign extends StatelessWidget {
                                   ),
                                 ),
                               ),
+                              SizedBox(height: 5),
                               Text(
                                 DataBase.myList[index]["name"],
                                 style: TextStyle(color: Colors.white),
                               ),
-                              SizedBox(height: 15),
+                              SizedBox(height: 5),
                               Container(
                                 height: 40,
                                 width: double.infinity,
@@ -124,15 +125,21 @@ class CoffeeDesign extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(10)),
                                 child: Row(
                                   children: [
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child:
-                                          Text(DataBase.myList[index]["price"]),
+                                    Icon(Icons.currency_rupee,
+                                        color: Colors.white, size: 20),
+                                    Text(
+                                      DataBase.myList[index]["price"],
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
                                     ),
                                     Spacer(),
                                     FloatingActionButton(
                                       onPressed: () {},
-                                      child: Text("+"),
+                                      child: Text(
+                                        "+",
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 25),
+                                      ),
                                     ),
                                   ],
                                 ),

@@ -1,4 +1,6 @@
 import 'package:coffee2design/coffee2design.dart';
+import 'package:coffee2design/login.dart';
+import 'package:coffee2design/new.dart';
 
 import 'package:flutter/material.dart';
 
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CoffeeDesign(),
+      home: Login(),
     );
   }
 }
